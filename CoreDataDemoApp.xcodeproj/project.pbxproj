@@ -12,6 +12,8 @@
 		3E56CFF1293F1547004C8BCD /* CoreDataDemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E56CFEF293F1547004C8BCD /* CoreDataDemoApp.xcdatamodeld */; };
 		3E56CFF3293F1549004C8BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E56CFF2293F1549004C8BCD /* Assets.xcassets */; };
 		3E56CFF6293F1549004C8BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E56CFF4293F1549004C8BCD /* LaunchScreen.storyboard */; };
+		3E56CFFE293F23CB004C8BCD /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E56CFFD293F23CB004C8BCD /* TaskViewController.swift */; };
+		3E56D000293F33A7004C8BCD /* UIButton + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E56CFFF293F33A7004C8BCD /* UIButton + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3E56CFF2293F1549004C8BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E56CFF5293F1549004C8BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E56CFF7293F1549004C8BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E56CFFD293F23CB004C8BCD /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		3E56CFFF293F33A7004C8BCD /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				3E56CFE6293F1547004C8BCD /* AppDelegate.swift */,
 				3E56CFEA293F1547004C8BCD /* TaskListViewController.swift */,
+				3E56CFFD293F23CB004C8BCD /* TaskViewController.swift */,
 				3E56CFF2293F1549004C8BCD /* Assets.xcassets */,
 				3E56CFF4293F1549004C8BCD /* LaunchScreen.storyboard */,
 				3E56CFF7293F1549004C8BCD /* Info.plist */,
 				3E56CFEF293F1547004C8BCD /* CoreDataDemoApp.xcdatamodeld */,
+				3E56CFFF293F33A7004C8BCD /* UIButton + Ext.swift */,
 			);
 			path = CoreDataDemoApp;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E56CFEB293F1547004C8BCD /* TaskListViewController.swift in Sources */,
+				3E56CFFE293F23CB004C8BCD /* TaskViewController.swift in Sources */,
 				3E56CFF1293F1547004C8BCD /* CoreDataDemoApp.xcdatamodeld in Sources */,
 				3E56CFE7293F1547004C8BCD /* AppDelegate.swift in Sources */,
+				3E56D000293F33A7004C8BCD /* UIButton + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
