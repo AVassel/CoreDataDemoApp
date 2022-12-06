@@ -6,8 +6,14 @@
 //
 
 import UIKit
+import CoreData
+
 
 class TaskViewController : UIViewController {
+    var delegate: TaskViewControllerDelegate?
+    
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     private lazy var newTaskTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "New Task"
@@ -32,6 +38,7 @@ class TaskViewController : UIViewController {
             for: .touchUpInside)
         return button
     }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +85,18 @@ class TaskViewController : UIViewController {
     }
     
     @objc private func save() {
+        guard let entityDescription = NSEntityDescription.entity(forEntityName: "Task", in: context) else { return }
+        guard let task = NSManagedObject(entity: entityDescription, insertInto: context) as? Task else { return }
+        task.title = newTaskTextField.text
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch let error {
+                print(error)
+            }
+        }
+        
+        delegate?.reloadData()
         dismiss(animated: true)
     }
     

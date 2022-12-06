@@ -59,8 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				3E56CFE6293F1547004C8BCD /* AppDelegate.swift */,
-				3E56CFEA293F1547004C8BCD /* TaskListViewController.swift */,
-				3E56CFFD293F23CB004C8BCD /* TaskViewController.swift */,
+				3E56D001293F3EBB004C8BCD /* ViewControllers */,
 				3E56CFF2293F1549004C8BCD /* Assets.xcassets */,
 				3E56CFF4293F1549004C8BCD /* LaunchScreen.storyboard */,
 				3E56CFF7293F1549004C8BCD /* Info.plist */,
@@ -68,6 +67,15 @@
 				3E56CFFF293F33A7004C8BCD /* UIButton + Ext.swift */,
 			);
 			path = CoreDataDemoApp;
+			sourceTree = "<group>";
+		};
+		3E56D001293F3EBB004C8BCD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E56CFEA293F1547004C8BCD /* TaskListViewController.swift */,
+				3E56CFFD293F23CB004C8BCD /* TaskViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
