@@ -18,7 +18,7 @@ extension UIButton {
     ) {
         self.init(type: .system)
         
-        self.setTitle(title, for: .normal)
+        self.setTitle(action.rawValue, for: .normal)
         self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         self.setTitleColor(.white, for: .normal)
         self.layer.cornerRadius = 4
